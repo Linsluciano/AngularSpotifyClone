@@ -1,0 +1,11 @@
+<span class="titulo-md">Top 5 Artistas</span>
+
+<app-artista-item-imagem
+    *ngFor="let artista of artistas"
+    [imagemSrc]="artista.imagemUrl"
+    onclick="alert('ainda em construção')"
+    
+    class="mt-1"
+
+> {{artista.nome}}
+</app-artista-item-imagem>
